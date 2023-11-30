@@ -20,12 +20,10 @@ body {
     background-color: $color-header;
     padding: 20px;
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu {
-    background-color: $color-header;
-}
 
 .menu__checkbox {
     position: absolute;
@@ -35,7 +33,7 @@ body {
 .menu__toggler {
     cursor: pointer;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .menu__list {
@@ -160,18 +158,21 @@ body {
 
 .footer {
     background-color: $color-footer;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px 10px 20px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     p {
         margin: 0;
+        font-size: 12px;
     }
     
     a {
         color: white;
         text-decoration: none;
+        font-size: 12px;
     }
     
     a:hover {
@@ -179,3 +180,6 @@ body {
     }
 }
 
+.logo__map {
+    margin-right: 10px;
+}

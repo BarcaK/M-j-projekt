@@ -1,70 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky White Garden</title>
+---
+layout: sablona.njk
+title: Lucky White Garden
+---
 
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    
-</head>
-<body>
-    <div class="header">
-        <img class="logo" src="/images/logo2.svg" alt="logo" width="120" height="100">
-       
-
-        <nav class="menu">
-
-            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
-
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">Štěňata</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Corgi</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Podhalan</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Galerie</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
-            </ul>
-        </nav>
+<div>
+    <div class="category">
+        <img class="category__photo1" src="/images/stenata.jpg" alt="stenata" width="450" height="300">
+        <p class="category__button"><a href="#"> Štěňata </a></p>
     </div>
-   
-    <div class="main">
+    <div class="category">
+        <img class="category__photo" src="/images/corgi.jpg" alt="corgi" width="300" height="300">
+        <p class="category__button"><a href="#"> Welsh Corgi Pembroke </a></p>
+    </div>
+    <div class="category">
+        <img class="category__photo" src="/images/podhalan.jpg" alt="podhalan" width="300" height="300">
+        <p class="category__button"><a href="#"> Podhalaňský ovčák </a></p>
+    </div>
+</div>
 
-        <div>
-            <div class="category">
-                <img class="category__photo1" src="/images/stenata.jpg" alt="stenata" width="450" height="300">
-                <p class="category__button"><a href="#"> Štěňata </a></p>
-            </div>
-            <div class="category">
-                <img class="category__photo" src="/images/corgi.jpg" alt="corgi" width="300" height="300">
-                <p class="category__button"><a href="#"> Welsh Corgi Pembroke </a></p>
-            </div>
-            <div class="category">
-                <img class="category__photo" src="/images/podhalan.jpg" alt="podhalan" width="300" height="300">
-                <p class="category__button"><a href="#"> Podhalaňský ovčák </a></p>
-            </div>
-        </div>
-
-        <div class="article">
-            <img class="article__photo" src="/images/tři pejsci.jpg" alt="tri pejsci" width="500" height="500">
-            <div class="article__text">
-                <h1> O nás </h1>
-                <p> Vítejte na stránkách naší chovatelské stanice Lucky White Garden, která vznikla v roce 2019 chovem Podhalaňských ovčáků.</p>
-                <p> Naším hlavním cílem je vychovávat zdravá a krásná štěňátka, kteřá budou splňovat veškeré standardy svého plemene.</p>
-                <p> Vždy se snažíme vybrat ke štěňátku tu nejlepší rodinu, která mu dá milující domov a bude nadále rozvíjet jeho potenciál.</p>
-            </div>
-        </div>
+<div class="article">
+    <img class="article__photo" src="/images/tři pejsci.jpg" alt="tri pejsci" width="500" height="500">
+    <div class="article__text">
+        <h1> O nás </h1>
+        <p> Vítejte na stránkách naší chovatelské stanice Lucky White Garden, která vznikla v roce 2019 chovem Podhalaňských ovčáků.</p>
+        <p> Naším hlavním cílem je vychovávat zdravá a krásná štěňátka, kteřá budou splňovat veškeré standardy svého plemene.</p>
+        <p> Vždy se snažíme vybrat ke štěňátku tu nejlepší rodinu, která mu dá milující domov a bude nadále rozvíjet jeho potenciál.</p>
+    </div>
+</div>
         
-    </div>
    
-    
-    <footer class="footer">
-        <p> Kontakt </p>
-        <p> Telefon: +420 606 672 020 </p>
-        <a class="footer__mail" href="mailto:dp.janouskovi@seznam.cz"> dp.janouskovi@seznam.cz </a>
-    </footer>
-    
-
-</body>
-</html>
