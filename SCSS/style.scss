@@ -5,7 +5,6 @@ $color-category: #C4D8D2;
 $body-font: 'Hind Madurai';
 
 
-
 html { box-sizing: border-box;}
 *, ::before, ::after { box-sizing: inherit; }
 
@@ -21,31 +20,57 @@ body {
     background-color: $color-header;
     padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+
 }
 
-.menu__items {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    gap: 5px;
+.menu {
+    background-color: $color-header;
+}
+
+.menu__checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
+.menu__toggler {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
 }
 
 .menu__list {
+    display: none;
+    margin: 0;
+    padding: 0;
     list-style: none;
-    padding: 10px 20px 10px 20px;
-}
-
-.menu__list:hover {
-    border: 2px solid white;
 }
 
 .menu__link {
+    display: block;
+    padding: 15px;
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+
+@media screen and (max-width: 749px) {
+    .menu__checkbox:checked ~ .menu__list {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .menu__toggler {
+        display: none;
+    }
+
+    .menu__list {
+        display: flex;
+    }
+
+    .menu__link:hover {
+        border: 2px solid white;
+    }
 }
 
 .category {
@@ -132,7 +157,6 @@ body {
         text-align: center;   
     }
 }
-
 
 .footer {
     background-color: $color-footer;
