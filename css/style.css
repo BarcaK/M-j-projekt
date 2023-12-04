@@ -116,6 +116,12 @@ body {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 750px) {
+  .section {
+    display: flex;
+    justify-content: center;
+  }
+}
 .article {
   background-color: #E7E3E4;
   display: flex;
@@ -141,6 +147,11 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 750px) {
+  .article {
+    flex-direction: row;
+  }
+}
 .footer {
   background-color: #5A6C73;
   padding: 10px 20px 10px 20px;

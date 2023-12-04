@@ -128,6 +128,13 @@ body {
     }
 }
 
+@media screen and (min-width: 750px) {
+    .section {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .article {
     background-color: #E7E3E4;
     display: flex;
@@ -153,6 +160,12 @@ body {
         margin-top: 5px;
         margin-bottom: 0;
         text-align: center;   
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .article {
+        flex-direction: row;
     }
 }
 
