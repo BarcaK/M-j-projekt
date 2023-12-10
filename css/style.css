@@ -219,6 +219,25 @@ body {
   margin: 0;
 }
 
+.content__table {
+  border-spacing: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.content__table td {
+  border-bottom: 1px solid black;
+}
+
+.table__left {
+  text-align: left;
+}
+
+.table__right {
+  text-align: right;
+}
+
 .content__about {
   text-align: center;
   border: 1px solid #cdcaca;
@@ -334,16 +353,24 @@ body {
 }
 
 .contact {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-image: url(/images/photo8.jpg);
+  background-position: center;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
 }
 
+.contact__title {
+  margin-bottom: 30px;
+}
+
 .contact__main {
   border: 2px solid #E7E3E4;
   border-radius: 5px;
-  box-shadow: 1px 2px 2px #8e8d8d;
   margin-bottom: 30px;
   padding: 10px;
   text-align: center;
@@ -360,7 +387,6 @@ body {
   margin-bottom: 30px;
   border: 2px solid #E7E3E4;
   border-radius: 5px;
-  box-shadow: 1px 2px 2px #8e8d8d;
 }
 
 @media screen and (min-width: 800px) {
