@@ -394,11 +394,7 @@ body {
 }
 
 .contact {
-    padding-top: 100px;
-    padding-bottom: 200px;
-    background-image: url(/images/photo8.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: #E7E3E4;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -411,8 +407,9 @@ body {
 }
 
 .contact__main {
-    border: 2px solid #E7E3E4;
+    border: 2px solid #cdcaca;
     border-radius: 5px;
+    box-shadow: 1px 2px 2px #8e8d8d;
     margin-bottom: 30px;
     padding: 10px;
     text-align: center;
@@ -427,19 +424,15 @@ body {
     }
 }
 
-.contact__map {
-    margin-bottom: 30px;
-    border: 2px solid #E7E3E4;
-    border-radius: 5px;
+.photo__contact {
+    width: 100%;
+}
+
+.map__width {
+    width: 100%;
 }
 
 @media screen and (min-width: 800px) {
-    .contact {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .contact__title {
-        grid-column: span 2;
-    }
+    
 
 }
