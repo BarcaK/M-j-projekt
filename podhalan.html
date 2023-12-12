@@ -6,7 +6,7 @@ title: Podhalan
 <div class="content">
     <div class="content__header">
 
-        <img class="content__photo" src="/images/belanka1.jpg" alt="belanka" width="200" height="250">
+        <img class="content__photo" src="/images/photo1.jpg" alt="belanka" width="200" height="250">
         
         <div class="content__data">
             <h3>Belana la Tera Porta</h3>
@@ -97,5 +97,36 @@ title: Podhalan
             Máte-li pochybnosti ohledně krmení, poraďte se se zkušeným chovatelem nebo na veterinární klinice.</p>
         </div>
     </div>
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="/images/belanka.jpg" alt="belanka"></li>
+            <li class="glide__slide"><img src="/images/máma a dcera.jpg" alt="mama-a-dcera"></li>
+            <li class="glide__slide"><img src="/images/malý podhalan.jpg" alt="stene"></li>
+            <li class="glide__slide"><img src="/images/dva podhalani.jpg" alt="podhalani"></li>
+            <li class="glide__slide"><img src="/images/anthea.jpg" alt="anthea"></li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+			<button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+			<button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+		</div>
+		
+		<div class="glide__bullets" data-glide-el="controls[nav]">
+			<button class="glide__bullet" data-glide-dir="=0"></button>
+			<button class="glide__bullet" data-glide-dir="=1"></button>
+			<button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+		</div>
+    </div>
+
+    <script src="glide.min.js"></script>
+
+    <script>
+        new Glide('.glide').mount()
+    </script>
 
 </div>

@@ -3,7 +3,6 @@ $color-footer: #5A6C73;
 $color-category: #C4D8D2;
 $body-font: 'Hind Madurai';
 
-
 html { box-sizing: border-box;}
 *, ::before, ::after { box-sizing: inherit; }
 
@@ -210,6 +209,23 @@ body {
     margin-right: 10px;
 }
 
+.puppys {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    &__title {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    &__photo {
+        width: 100%;
+    }
+}
+
+
 .content__header {
     background-color: #E7E3E4;
     display: grid;
@@ -388,10 +404,9 @@ body {
     }
 }
 
-
-.content__footer {
-    margin-top: 30px;
-}
+.glide__slide img {
+    width: 100%;
+  }
 
 .contact {
     background-color: #E7E3E4;
@@ -400,10 +415,10 @@ body {
     justify-items: center;
     align-items: center;
     
-}
-
-.contact__title {
-    margin-bottom: 30px;
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }
 
 .contact__main {
@@ -430,9 +445,4 @@ body {
 
 .map__width {
     width: 100%;
-}
-
-@media screen and (min-width: 800px) {
-    
-
 }
