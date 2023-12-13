@@ -97,14 +97,15 @@ title: Podhalan
             Máte-li pochybnosti ohledně krmení, poraďte se se zkušeným chovatelem nebo na veterinární klinice.</p>
         </div>
     </div>
+</div>
 
     <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide"><img src="/images/belanka.jpg" alt="belanka"></li>
             <li class="glide__slide"><img src="/images/máma a dcera.jpg" alt="mama-a-dcera"></li>
-            <li class="glide__slide"><img src="/images/malý podhalan.jpg" alt="stene"></li>
-            <li class="glide__slide"><img src="/images/dva podhalani.jpg" alt="podhalani"></li>
+            <li class="glide__slide"><img src="/images/dva spící psi.jpg" alt="dva-psi "></li>
+            <li class="glide__slide"><img src="/images/belanka vrh a.jpg" alt="belanka"></li>
             <li class="glide__slide"><img src="/images/anthea.jpg" alt="anthea"></li>
           </ul>
         </div>
@@ -123,10 +124,13 @@ title: Podhalan
 		</div>
     </div>
 
-    <script src="glide.min.js"></script>
+    <script src="/js/glide.min.js"></script>
 
     <script>
-        new Glide('.glide').mount()
+    new Glide('.glide', {
+		autoplay: 3000,
+		perView: 3,
+		type: "carousel",
+	}).mount()
     </script>
 
-</div>
